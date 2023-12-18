@@ -1,18 +1,15 @@
-[submodule "rfm69"]
-	path = rfm69
-	url = git@github.com:VTC-WISDOM/pico_rfm69hcw.git
 [submodule "server"]
 	path = server
 	url = git@github.com:VTC-WISDOM/wisdom_server.git
+[submodule "rfm69"]
+	path = rfm69
+	url = git@github.com:VTC-WISDOM/pico_rfm69hcw.git
 [submodule "ds3231"]
 	path = ds3231
 	url = git@github.com:VTC-WISDOM/pico_ds3231.git
-
-[submodule "pico-ssd1306"]
-	path = pico-ssd1306
+[submodule "sd"]
+	path = sd
+	url = git@github.com:carlk3/no-OS-FatFS-SD-SPI-RPi-Pico.git
+[submodule "ssd1306"]
+	path = ssd1306
 	url = git@github.com:daschr/pico-ssd1306.git
-	url = https://github.com/daschr/pico-ssd1306.git
-[submodule "no-OS-FatFS-SD-SPI-RPi-Pico"]
-	path = no-OS-FatFS-SD-SPI-RPi-Pico
-	url = https://github.com/carlk3/no-OS-FatFS-SD-SPI-RPi-Pico.git
-
