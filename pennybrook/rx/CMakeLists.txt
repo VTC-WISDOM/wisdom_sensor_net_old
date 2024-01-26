@@ -22,7 +22,7 @@ project(pb_rx C CXX ASM)
 # Initialise the Raspberry Pi Pico SDK
 pico_sdk_init()
 
-add_subdirectory(../../no-OS-FatFS-SD-SPI-RPi-Pico/FatFs_SPI build)
+add_subdirectory(../../sd/FatFs_SPI build)
 
 # Add executable. Default name is the project name, version 0.1
 
@@ -31,7 +31,7 @@ add_executable(
     pb_rx.c
     hw_config.c
     ../../rfm69/rfm69.c
-    ../../pico-ssd1306/ssd1306.c
+    ../../ssd1306/ssd1306.c
     ../../rudp/rudp.c
 	../../common/common_config.c
 )
@@ -60,7 +60,7 @@ target_include_directories(pb_rx PRIVATE
     ${CMAKE_CURRENT_LIST_DIR}/.. # for our common lwipopts or any other standard includes, if required
     ../../rfm69/
     ../../rudp/
-    ../../pico-ssd1306/
+    ../../ssd1306/
 	../../common/
 )
 
